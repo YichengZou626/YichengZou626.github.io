@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yicheng Zou | Ph.D. Research Portfolio</title>
+    <meta
+      name="description"
+      content="Personal research portfolio for a Duke Mechanical Engineering and Materials Science Ph.D. student working on diffusion models, Helmholtz equations, and ultrasound modeling."
+    />
+    <link rel="stylesheet" href="styles.css?v=6" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Home">Yicheng Zou</a>
+      <nav aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#life">Life</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Duke MEMS &middot; Probabilistic scientific machine learning</p>
+          <h1 id="hero-title">Diffusion models for waves, ultrasound, and brain-machine interfaces.</h1>
+          <p class="intro">
+            I am a first-year Ph.D. student in Mechanical Engineering and Materials Science at Duke University,
+            advised by Dr. Hossein (Amir) Salahshoor. My research focuses on diffusion models, ultrasound modeling,
+            and fast surrogate methods for high-frequency wave physics.
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="https://github.com/YichengZou626" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="photo-board" aria-label="Photo gallery">
+          <figure class="photo-card lab-photo">
+            <img src="images/lab.jpg" alt="Lab photo" />
+            <figcaption>Our lab and research environment</figcaption>
+          </figure>
+          <figure class="photo-card profile-photo">
+            <img src="images/profile.JPG" alt="Portrait photo of Yicheng Zou" />
+            <figcaption>Ph.D. student &middot; Duke University</figcaption>
+          </figure>
+          <figure class="photo-card life-photo">
+            <img src="images/life.JPG" alt="Personal life selfie photo" />
+            <figcaption>a day in ATL</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="research" class="section research-section" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research Focus</p>
+          <h2 id="research-title">Probabilistic operators for challenging wavefields</h2>
+        </div>
+        <div class="research-grid">
+          <article>
+            <h3>Diffusion Models</h3>
+            <p>
+              Score-based conditional diffusion operators for uncertainty-aware prediction of complex solution fields.
+            </p>
+          </article>
+          <article>
+            <h3>High-Frequency Helmholtz</h3>
+            <p>
+              Learning solution operators for oscillatory PDEs where phase sensitivity and spectral bias make
+              deterministic models brittle.
+            </p>
+          </article>
+          <article>
+            <h3>Ultrasound Modeling</h3>
+            <p>
+              Fast patient-specific surrogates for 3D transcranial focused ultrasound simulation in heterogeneous
+              cranial media.
+            </p>
+          </article>
+          <article>
+            <h3>Long-Term Vision</h3>
+            <p>
+              Advancing computational tools that may help enable precise, adaptive, and personalized brain-machine
+              interface technologies.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2 id="projects-title">Research code and papers</h2>
+        </div>
+
+        <div class="projects">
+          <article class="project-card">
+            <div class="project-visual helmholtz-visual" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Project 01 &middot; Helmholtz equations</p>
+              <h3>A Probabilistic Framework for Learning Solution Operators of Deterministic High-Frequency Helmholtz Equations</h3>
+              <p>
+                Deterministic neural operators perform well on many PDEs but can struggle with high-frequency wave
+                phenomena, where strong input-to-output sensitivity and spectral bias blur oscillations. This project
+                adopts a probabilistic approach using a score-based conditional diffusion operator, benchmarking across
+                frequencies with errors measured in L2, H1, spectral power, and energy norms.
+              </p>
+              <div class="metric-row" aria-label="Project strengths">
+                <span>Conditional diffusion</span>
+                <span>Wave PDEs</span>
+                <span>Uncertainty propagation</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/YichengZou626/Diffusion-Model-for-High-Frequency-Helmholtz" target="_blank" rel="noreferrer">
+                  GitHub repository
+                </a>
+                <span class="inactive-link">Paper coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual ultrasound-visual" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Project 02 &middot; Transcranial ultrasound</p>
+              <h3>Diffusion-Based Probabilistic Modeling for Three-Dimensional Transcranial Focused Ultrasound Simulation</h3>
+              <p>
+                Patient-specific ultrasound planning requires repeated 3D Helmholtz solves in heterogeneous cranial
+                media. This project introduces a conditional diffusion model that predicts ultrasonic pressure fields
+                from patient-specific acoustic inputs and compares against U-Net and Fourier neural operator baselines
+                across skull anatomy, transducer position, tumor region, and phased-array element selection settings.
+              </p>
+              <div class="metric-row" aria-label="Project strengths">
+                <span>3D pressure fields</span>
+                <span>Patient-specific planning</span>
+                <span>Focused ultrasound</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/YichengZou626/diffusion-probabilistic-3d-tfUS-simulation" target="_blank" rel="noreferrer">
+                  GitHub repository
+                </a>
+                <span class="inactive-link">Paper coming soon</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="life" class="section life-section" aria-labelledby="life-title">
+        <div class="section-heading">
+          <p class="eyebrow">Outside the Lab</p>
+          <h2 id="life-title">Basketball, games, and a little competitive energy</h2>
+        </div>
+        <div class="life-grid">
+          <article>
+            <h3>Basketball</h3>
+            <p>The San Antonio Spurs are my favorite team.</p>
+          </article>
+          <article>
+            <h3>Video Games</h3>
+            <p>I enjoy PS5, Xbox, and League of Legends.</p>
+          </article>
+          <article>
+            <h3>Curiosity</h3>
+            <p>I like research problems that sit between computation, physics, and human-centered technology.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's connect</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:your.email@duke.edu">your.email@duke.edu</a>
+          <a href="https://github.com/YichengZou626" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Yicheng Zou. Built as a local static webpage.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
